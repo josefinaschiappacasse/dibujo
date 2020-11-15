@@ -25,3 +25,6 @@ function keyPressed() {
     fill(random(0), random(100, 200), random(100, 200));
   }
 }
+function keyTyped() {
+  if (key == 'a') save("P_2_2_4_02.png");
+}
