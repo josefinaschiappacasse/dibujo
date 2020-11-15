@@ -1,5 +1,9 @@
+
+let sketch;
+
 function setup() {
-  createCanvas(710, 400, WEBGL);
+  sketch = createCanvas(710, 400, WEBGL);
+  sketch.parent("p5");
   background(255);
 }
 
@@ -17,7 +21,7 @@ function variableEllipse(x, y, px, py) {
 }
 
 function keyPressed() {
-  if (key === ' ') {
+  if (key === 'c') {
     fill(random(0), random(100, 200), random(100, 200));
   }
 }
