@@ -12,10 +12,10 @@ function draw() {
   if (mouseIsPressed) {
     background(255);
   }
-  variableEllipse(mouseX, mouseY, pmouseX, pmouseY);
+  variable(mouseX, mouseY, pmouseX, pmouseY);
 }
 
-function variableEllipse(x, y, px, py) {
+function variable(x, y, px, py) {
   let speed = abs(x - px) + abs(y - py);
   sphere(x, speed, speed);
 }
