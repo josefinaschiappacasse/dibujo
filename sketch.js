@@ -2,7 +2,7 @@
 let sketch;
 
 function setup() {
-  sketch = createCanvas(710, 400, WEBGL);
+  sketch = createCanvas(710, windowHeight, WEBGL);
   sketch.parent("p5");
   background(255);
 }
