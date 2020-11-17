@@ -12,10 +12,10 @@ function draw() {
   if (mouseIsPressed) {
     background(255);
   }
-  variableEllipse(mouseX, mouseY, pmouseX, pmouseY);
+  variable(mouseX, mouseY, pmouseX, pmouseY);
 }
 
-function variableEllipse(x, y, px, py) {
+function variable(x, y, px, py) {
   let speed = abs(x - px) + abs(y - py);
   sphere(x, speed, speed);
 }
@@ -24,4 +24,7 @@ function keyPressed() {
   if (key === 'c') {
     fill(random(0), random(100, 200), random(100, 200));
   }
+}
+function keyTyped() {
+  if (key == 'a') save("P_2_2_4_02.png");
 }
